@@ -43,7 +43,7 @@ export class AppComponent implements OnInit {
     var options = {
       chart: {
         type: 'bar',
-        width: '400px',
+        width: '300px',
         height: '200px',
       },
       series: [
