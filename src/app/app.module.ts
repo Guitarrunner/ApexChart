@@ -5,6 +5,7 @@ import { NgApexchartsModule } from 'ng-apexcharts';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
@@ -14,6 +15,7 @@ import { FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
     NgApexchartsModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

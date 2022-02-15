@@ -2,15 +2,17 @@
 
   <div id="chart" #content >
     <h1>Escalable Charts</h1>
-    <div>
-      <form class="form-horizontal" [formGroup]="form" (ngSubmit)="onSubmit(form)">
+    <!---<div>
+       <form class="form-horizontal" [formGroup]="form" (ngSubmit)="onSubmit(form)">
         <input type="textarea" placeholder="Escale to" formControlName="scale" />
         <button type="submit" [disabled]="form.invalid">To PDF</button>
       </form>
-    </div>
-    <apx-chart [series]="series" [chart]="chart" [title]="title"></apx-chart>
+    </div> !--->
+    <form class="form-horizontal" [formGroup]="form" (ngSubmit)="onSubmit(form)">
+      <button type="submit">To PDF</button>
+    </form>
+    <div class="test2"></div></div>
     
-  </div>
-  <div class="test" style="background-color: red;"></div>
+  <div class="test" ></div>
 <p>DataURI</p>
   <p style="font-family:courier;max-width: 1500px;word-wrap: break-word;">{{response$ | async | json}}</p>
